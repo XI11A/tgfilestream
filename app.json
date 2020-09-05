@@ -1,0 +1,55 @@
+{
+  "name": "TG File Stream",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best",
+    "youtube",
+    "downloader",
+    "open",
+    "source",
+    "multi",
+    "purpose",
+    "ffmpeg",
+    "remote",
+    "uploader"
+  ],
+  "success_url": "https://telegram.dog/tgfilestream",
+  "website": "https://nivash.me",
+  "repository": "https://github.com/XI11A/tgfilestream",
+  "env": {
+    },
+    "TG_BOT_FATHER_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    },
+    "TG_API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "TG_API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "PUBLIC_URL": {
+      "description": "App Domain",
+      "value": "App Domain"
+    },
+  }
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+}
+}
+}
